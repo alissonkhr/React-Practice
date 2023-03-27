@@ -28,7 +28,7 @@ const Team = () => {
     },
     {
       field: "phone",
-      headerName: "Phone",
+      headerName: "Phone Number",
       flex: 1,
     },
     {
