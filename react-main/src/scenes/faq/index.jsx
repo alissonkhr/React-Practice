@@ -13,6 +13,51 @@ const FAQ = () => {
   return (
     <Box m="20px">
       <Header title="FAQ" subtitle="Frequently Asked Questions Page" />
+      <Accordion defaultExpanded>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography color={colors.greenAccent[500]} variant="h5">
+            An Important Question
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+            praesentium porro ullam maxime nesciunt, distinctio iure autem
+            molestiae facere dignissimos accusantium inventore veniam deserunt
+            adipisci officia quae laudantium deleniti doloremque.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion defaultExpanded>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography color={colors.greenAccent[500]} variant="h5">
+            A Random Question
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+            praesentium porro ullam maxime nesciunt, distinctio iure autem
+            molestiae facere dignissimos accusantium inventore veniam deserunt
+            adipisci officia quae laudantium deleniti doloremque.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion defaultExpanded>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography color={colors.greenAccent[500]} variant="h5">
+            The Final Question
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+            praesentium porro ullam maxime nesciunt, distinctio iure autem
+            molestiae facere dignissimos accusantium inventore veniam deserunt
+            adipisci officia quae laudantium deleniti doloremque.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
     </Box>
   );
 };
