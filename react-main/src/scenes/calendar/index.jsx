@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Calendar, formatDate } from "@fullcalendar/core";
-import daygrid from "@fullcalendar/daygrid";
-import timegrid from "@fullcalendar/timegrid";
-import { Interaction } from "@fullcalendar/core/internal";
-import list from "@fullcalendar/list";
+import FullCalendar from "@fullcalendar/react";
+import { formatDate } from "@fullcalendar/core";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import interactionPlugin from "@fullcalendar/interaction";
+import listPlugin from "@fullcalendar/list";
 import {
   Box,
   List,
@@ -86,9 +87,9 @@ const MyCalendar = () => {
         </Box>
         {/* CALENDAR */}
         <Box flex="1 1 100%" ml="15px">
-          <Calendar
+          <FullCalendar
             height="75vh"
-            plugins={[daygrid, timegrid, Interaction, list]}
+            plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin, listPlugin]}
             headerToolbar={{
               left: "prev, next, today",
               center: "title",
