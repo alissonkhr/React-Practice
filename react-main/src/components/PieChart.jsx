@@ -34,7 +34,7 @@ const PieChart = () => {
         },
         legends: {
           text: {
-            fill: colors.grey[400],
+            fill: colors.grey[100],
           },
         },
       }}
