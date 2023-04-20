@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import Header from "../../components/Header";
 
 const Dashboard = () => {
