@@ -123,6 +123,8 @@ const Dashboard = () => {
             }
           />
         </Box>
+
+        {/* ROW 2 */}
       </Box>
     </Box>
   );
