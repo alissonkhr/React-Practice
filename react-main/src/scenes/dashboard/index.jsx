@@ -145,6 +145,13 @@ const Dashboard = () => {
               >
                 Revenue Generated
               </Typography>
+              <Typography
+                variant="h3"
+                fontWeight="500"
+                color={colors.greenAccent[500]}
+              >
+                $59,342,321
+              </Typography>
             </Box>
           </Box>
         </Box>
