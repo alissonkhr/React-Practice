@@ -13,6 +13,7 @@ import GeographyChart from "../../components/GeographyChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 import Header from "../../components/Header";
+import { Download } from "@mui/icons-material";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -152,6 +153,13 @@ const Dashboard = () => {
               >
                 $59,342,321
               </Typography>
+            </Box>
+            <Box>
+              <IconButton>
+                <DownloadOutlinedIcon
+                  sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
+                />
+              </IconButton>
             </Box>
           </Box>
         </Box>
