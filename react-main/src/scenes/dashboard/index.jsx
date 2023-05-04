@@ -148,7 +148,7 @@ const Dashboard = () => {
               </Typography>
               <Typography
                 variant="h3"
-                fontWeight="500"
+                fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
                 $59,342,321
@@ -216,6 +216,34 @@ const Dashboard = () => {
               </Box>
             </Box>
           ))}
+        </Box>
+
+        {/* ROW 3 */}
+        <Box
+          gridColumn="span 4"
+          gridRow="span 2"
+          backgroundColor={colors.primary[400]}
+          p="30px"
+        >
+          <Typography variant="h5" fontWeight="600">
+            Campaign
+          </Typography>
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            mt="25px"
+          >
+            <ProgressCircle size="125" />
+            <Typography
+              variant="h5"
+              color={colors.greenAccent[500]}
+              sx={{ mt: "15px" }}
+            >
+              $48,352 revenue generated
+            </Typography>
+            <Typography>Includes extra misc. expenditures and costs</Typography>
+          </Box>
         </Box>
       </Box>
     </Box>
